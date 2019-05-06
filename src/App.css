@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "nordea";
+  src: url("/assets/fonts/NordeaSansSmall.woff2") format('woff');
+}
+
+body {
+  font-size: 16px;
+  background: rgb(231, 230, 230);
+}
+
+a {
+  text-decoration: underline;
+}
+
+/* Header styles */
+.header-container {
+  background: rgb(0, 0, 114);
+  color: #fff;
+}
+
+.header-text {
+  padding: 10px;
+}
+
+.app-header-label {
+  font-weight: 250;
+}
+
+/* Caret styles */
+
+.container-down {
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.triangle-down {
+  position: absolute;
+  margin: auto;
+  top: 3px;
+  left: 7px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.container-up {
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.triangle-up {
+  position: absolute;
+  margin: auto;
+  top: 7px;
+  left: 7px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  transform: rotate(223deg);
+  -webkit-transform: rotate(223deg);
+  -moz-transform: rotate(223deg);
+  -o-transform: rotate(223deg);
+  -ms-transform: rotate(223deg);
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Forms */
+
+.card-content, .details{
+  padding-left: 0.1px;
+  margin-left: 0.1px;
+}
+
+.content-border {
+  border-bottom: 1px rgb(56, 56, 126) solid;
+  width: 100%;
+}
+
+.payment-method-radio {
+  padding: 11px 0;
+}
+
+.special-font {
+  font-size: 17px;
+}
+
+.details-hide{
+  padding: 20px 0;
+}
+
+
+.card-order {
+  background: rgb(0, 0, 114);
+  color: #fff;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.card-select-pay-method{
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+label{
+  margin-left: 10px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.circled-mark {
+  border: 1px solid blue;
+  border-radius: 50%;
+  padding: 0 5px;
+}
+
+img{
+  width: 50%;
+  margin: 7px 0;
+}
+
+.content-border-select:not(:last-child) {
+  border-bottom: 1px #ccc solid;
+  width: 100%;
+}
+
+.invoice-border-select {
+  border-bottom: 1px #ccc solid;
+  width: 87%;
+  margin-left: 25px;
+}
+
+.vat-margin {
+  margin-left: 140px;
+}
+
+.btn {
+  background: rgb(0, 0, 114);
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+}
+
+.invoice-condition {
+  margin-left: 25px;
+}
+
+.lock {
+  width: 12%;
+  padding: 6px;
+
+}
+
+.masterpass-btn {
+  width: 65%;
+}
+
+.encrypted {
+  font-size: 12px;
+}
+
+footer {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+input[type=text], input[type=number] {
+  border-radius:  2px;
+  margin: 7px 0;
+}
+
+
+/* Custom radiobutton */
+.radio-button {
+  cursor: pointer;
+}
+.radio-button input[type="radio"] {
+  display: none;
+}
+.radio-button input[type="radio"]:checked + .custom-radio::before {
+  transform: scale(1);
+}
+.radio-button .custom-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid blue;
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+  vertical-align: -4px;
+}
+.radio-button .custom-radio::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  transform: scale(0);
+  transition: all 0.3s ease;
+}
+
+.terms-conditions {
+  margin-left: 10px;
+}
+
+/* Custom checkbox */
+  
+.checkbox {
+  display: block;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"]:checked + .custom-checkbox::before,
+.checkbox input[type="checkbox"]:checked + .custom-checkbox::after {
+  display: block;
+}
+.checkbox .custom-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid blue;
+  margin-right: 3px;
+  vertical-align: middle;
+  margin-top: -2px;
+  position: relative;
+}
+.checkbox .custom-checkbox::before,
+.checkbox .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  background: blue;
+  height: 3px;
+  left: 4px;
+  bottom: 2px;
+  transform-origin: 1px 1px;
+}
+.checkbox .custom-checkbox::before {
+  transform: rotate(-45deg);
+  width: 14px;
+}
+.checkbox .custom-checkbox::after {
+  transform: rotate(-135deg);
+  width: 8px;
+}
