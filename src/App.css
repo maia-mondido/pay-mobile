@@ -5,7 +5,7 @@
 
 body {
   font-size: 16px;
-  background: rgb(231, 230, 230);
+  background: #F4F2F1;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 
 /* Header styles */
 .header-container {
-  background: rgb(0, 0, 114);
+  background: #00075A;
   color: #fff;
 }
 
@@ -100,7 +100,7 @@ a {
 
 
 .card-order {
-  background: rgb(0, 0, 114);
+  background: #00075A;
   color: #fff;
   margin: 15px 0;
   border-radius: 10px;
@@ -153,7 +153,7 @@ img{
 }
 
 .btn {
-  background: rgb(0, 0, 114);
+  background: #00075A;
   color:#fff;
   width: 100%;
   border-radius: 20px;
@@ -178,6 +178,7 @@ label {
 
 .invoice-condition {
   margin-left: 25px;
+  margin-bottom: 20px;
 }
 
 .lock {
