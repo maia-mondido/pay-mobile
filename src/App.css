@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "nordea";
-  src: url("/assets/fonts/NordeaSansSmall.woff2") format('woff');
+  font-family: "Nordea";
+  src: url("/assets/fonts/NordeaSansLarge-Light.ttf");
 }
 
 body {
@@ -60,7 +60,7 @@ a {
 .triangle-up {
   position: absolute;
   margin: auto;
-  top: 7px;
+  top: 8px;
   left: 7px;
   right: 0;
   width: 10px;
@@ -127,7 +127,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .circled-mark {
-  border: 1px solid blue;
+  border: 1px solid #0000a0;
   border-radius: 50%;
   padding: 0 5px;
 }
@@ -154,10 +154,21 @@ img{
 
 .btn {
   background: rgb(0, 0, 114);
+  color:#fff;
   width: 100%;
   border-radius: 20px;
   border: none;
   margin: 10px 0;
+}
+
+.btn:hover {
+  background: #e5f2ff;
+  color: #8DB8E8;
+}
+
+.btn:disabled {
+  background: #B2B3CC;
+  color: #E8E8EF;
 }
 
 label {
@@ -208,7 +219,7 @@ input[type=text], input[type=number] {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid blue;
+  border: 2px solid #0000a0;
   margin-right: 5px;
   display: inline-block;
   position: relative;
@@ -218,7 +229,7 @@ input[type=text], input[type=number] {
   content: "";
   width: 10px;
   height: 10px;
-  background: blue;
+  background: #0000a0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -252,7 +263,7 @@ input[type=text], input[type=number] {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid blue;
+  border: 2px solid #0000a0;
   margin-right: 3px;
   vertical-align: middle;
   margin-top: -2px;
@@ -263,7 +274,7 @@ input[type=text], input[type=number] {
   content: "";
   position: absolute;
   display: none;
-  background: blue;
+  background: #0000a0;
   height: 3px;
   left: 4px;
   bottom: 2px;
