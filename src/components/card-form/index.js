@@ -30,16 +30,16 @@ const CardForm = () => (
         <div className="col-xs-12">
         
             <div className="form-group">
-                <label class="checkbox">
+                <label className="checkbox">
                     <input type="checkbox" />
-                    <span class="custom-checkbox"></span>
+                    <span className="custom-checkbox"></span>
                     <span className="terms-conditions">I agree to the Terms and Conditions</span>
                 </label>
             </div>
             <div className="form-group">
-                <label class="checkbox">
+                <label className="checkbox">
                     <input type="checkbox" />
-                    <span class="custom-checkbox"></span>
+                    <span className="custom-checkbox"></span>
                     <span className="terms-conditions">I agree to the Terms and Conditions</span>
                 </label>
             </div>
